@@ -5,13 +5,24 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
-
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 	}
 
+	@Override
+	protected void onStart(){
+		super.onStart();
+		Toast.makeText(context: this, text: "App on Start", Toast.LENGTH_SHORT).show();
+
+	}
+
+	@Override
+	protected void onStop(){
+		super.onStop();
+		Toast.makeText(context: this, text: "App on Stop", Toast.LENGTH_SHORT.show();
+	}
 	// TODO: tambahkan callback onStart() di sini
 
 
